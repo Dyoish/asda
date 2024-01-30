@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+      body {
+        font-family: Poppins;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .container {
+        max-width: 600px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #333333;
+      }
+
+      p {
+        color: #666666;
+        line-height: 1.6;
+      }
+      nav {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        z-index: 99;
+      }
+
+      .nav__content {
+        max-width: var(--max-width);
+        margin: auto;
+        padding: 0.5rem 9rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      nav .logo a {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--primary-color);
+        transition: 0.3s;
+      }
+
+      nav .logo a:hover {
+        color: var(--primary-color-dark);
+      }
+
+      nav .checkbox {
+        display: none;
+      }
+
+      nav input {
+        display: none;
+      }
+
+      nav .checkbox i {
+        font-size: 2rem;
+        color: var(--primary-color);
+        cursor: pointer;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        list-style: none;
+        transition: left 0.3s;
+      }
+
+      ul li a {
+        padding: 0.5rem 1rem;
+        border: 2px solid transparent;
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--text-dark);
+        transition: 0.3s;
+      }
+
+      ul li a:hover {
+        color: var(--secondary-color);
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav__content">
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="aboutme.html" style="color: #ff3e3e">About me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>About Me</h1>
+      <p>
+        Hello, my name is Josh Alfred P. Dalmacio, and I am excited about the
+        opportunity to interview for the IT specialist position. With a
+        background in IT Field, I bring a unique blend of skills and experiences
+        that I believe make me a strong fit for this role." <br />
+
+        <br />
+        I believe in the power of collaboration and have a proven track record
+        of working effectively with cross-functional teams. At my previous
+        company, I collaborated with multimedia team to achieve our huge project
+        called MasterBaiter. <br />
+
+        <br />
+        I am confident that my skills, experiences, and passion for any role to
+        make me a strong candidate for the position. I am eager to bring my
+        expertise to this company and contribute to its continued success..
+      </p>
+    </div>
+  </body>
+</html>

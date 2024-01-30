@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+      body {
+        font-family: Poppins;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .container {
+        max-width: 600px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #333333;
+      }
+
+      p {
+        color: #666666;
+        line-height: 1.6;
+      }
+      nav {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        z-index: 99;
+      }
+
+      .nav__content {
+        max-width: var(--max-width);
+        margin: auto;
+        padding: 0.5rem 9rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      nav .logo a {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--primary-color);
+        transition: 0.3s;
+      }
+
+      nav .logo a:hover {
+        color: var(--primary-color-dark);
+      }
+
+      nav .checkbox {
+        display: none;
+      }
+
+      nav input {
+        display: none;
+      }
+
+      nav .checkbox i {
+        font-size: 2rem;
+        color: var(--primary-color);
+        cursor: pointer;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        list-style: none;
+        transition: left 0.3s;
+      }
+
+      ul li a {
+        padding: 0.5rem 1rem;
+        border: 2px solid transparent;
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--text-dark);
+        transition: 0.3s;
+      }
+
+      ul li a:hover {
+        color: var(--secondary-color);
+      }
+
+      .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .project-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 15px;
+        overflow: hidden;
+        width: 300px;
+        transition: transform 0.3s ease;
+      }
+
+      .project-card:hover {
+        transform: scale(1.05);
+      }
+
+      .project-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-bottom: 2px solid #eee;
+      }
+
+      .project-card-content {
+        padding: 15px;
+      }
+
+      .project-card h2 {
+        margin: 0 0 10px;
+        color: #333;
+      }
+
+      .project-card p {
+        margin: 0;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" style="color: #ff3e3e">Projects</a></li>
+          <li><a href="aboutme.html">About me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="project-container">
+      <div class="project-card">
+        <img src="img6.png" alt="Project 1 Image" />
+        <div class="project-card-content">
+          <h2>Project 1: Quiesh</h2>
+          <p>
+            This project was created since the current generation is
+            significantly different from earlier generations. Today’s students
+            find the traditional reviews method tedious, so we developed a
+            fresh, and entertaining method that also allows for
+            question-answering.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="img7.png" alt="Project 2 Image" />
+        <div class="project-card-content">
+          <h2>Project 2: Pitique</h2>
+          <p>
+            Pitique is a a photography website consisting of various pictures,
+            ranging from the day-to-day college life to the mesmerizing
+            sceneries of our nature. Our team aims to create a hub for
+            photography enthusiasts and for others to gain an interest and
+            appreciate the art of photography.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="titlescreen.png" alt="Project 2 Image" />
+        <div class="project-card-content">
+          <h2>Project 3: Ropersors</h2>
+          <p>
+            A RPS-based game using Java that incorporates elements such as fire,
+            water, and flora(nature) to add another layer of fun to the game.
+            The players will be granted 10 lives at the start of each game, and
+            it will then be decremented depending on the outcomes of each round.
+            For each round, the players will choose among the objects (R,P,S).
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="img8.png" alt="Project 2 Image" />
+        <div class="project-card-content">
+          <h2>Project 4: Afterworlds</h2>
+          <p>
+            A survival horde game is an immersive gaming experience where
+            players confront relentless waves of enemies, often in a
+            post-apocalyptic setting. The gameplay revolves around strategic
+            survival, requiring players to scavenge resources, fortify shelters,
+            and withstand progressively challenging hordes of adversaries.
+          </p>
+        </div>
+      </div>
+
+      <!-- Add more project cards as needed -->
+    </div>
+  </body>
+</html>
